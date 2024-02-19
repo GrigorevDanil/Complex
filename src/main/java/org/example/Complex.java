@@ -1,14 +1,14 @@
 package org.example;
 
 public class Complex {
-    private int x, y;
+    private double x, y;
 
-    public Complex(int x, int y) {
+    public Complex(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
@@ -16,7 +16,7 @@ public class Complex {
         this.x = x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
