@@ -25,22 +25,22 @@ class ServiceComplexTest {
 
     @Test
     void add() {
-        assertEquals("10.0 + 10.0i", service.str(service.add(complex1,complex2)));
+        assertEquals(new Complex(10,10), service.add(complex1,complex2));
     }
 
     @Test
     void sub() {
-        assertEquals("0.0 + 0.0i", service.str(service.sub(complex1,complex2)));
+        assertEquals(new Complex(0,0),service.sub(complex1,complex2));
     }
 
     @Test
     void mul() {
-        assertEquals("0.0 + 50.0i", service.str(service.mul(complex1,complex2)));
+        assertEquals(new Complex(0,50), service.mul(complex1,complex2));
     }
 
     @Test
     void div() {
-        assertEquals("25.5 + 0.0i", service.str(service.div(complex1,complex2)));
+        assertEquals(new Complex(25.5,0), service.div(complex1,complex2));
     }
 
     @Test
